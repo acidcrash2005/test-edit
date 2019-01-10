@@ -13,6 +13,7 @@ import './style.scss';
 //Actions
 import {setEditingState} from '../../bus/ui/actions';
 
+//MapDispatch
 const mapDispatch = (dispatch) => {
     return {
         actions: bindActionCreators({
