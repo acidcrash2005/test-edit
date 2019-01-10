@@ -21,8 +21,6 @@ export const uiReducer = (state = initialState, action) => {
             };
 
         case types.SET_EDITING_STATE:
-            console.log(action);
-
             return {
                 ...state,
                 editState: state.editState.map((item) => {
