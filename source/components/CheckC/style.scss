@@ -1,0 +1,55 @@
+.component-CheckC{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 15px 13px 15px;
+
+    &__controls{
+        display: flex;
+        align-items: center;
+        & > *{
+            margin:0 3px;
+        }
+    }
+
+    & + &{
+        border-top: 1px solid var(--paletteColor3);
+    }
+
+    &__input{
+        width: 20px;
+        height: 10px;
+        border-radius: 20px;
+        background: rgba(144, 144, 144, 0.30);
+        cursor: pointer;
+        position: relative;
+        transition: background 0.25s ease;
+
+        input{
+            display: none;
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 100%;
+            width: 9px;
+            height: 9px;
+            background: rgba(255, 255, 255, 0.45);
+            transition: transform 0.25s ease;
+            transform: translateX(0);
+        }
+
+        &.i-checked{
+            background: #2DB461;
+
+            &:before{
+                transform: translateX(10px);
+                background: rgba(255, 255, 255,1);
+            }
+        }
+    }
+}

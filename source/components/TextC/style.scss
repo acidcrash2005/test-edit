@@ -1,0 +1,56 @@
+.text-container{
+    color: var(--paletteColor2);
+    padding: 25px;
+}
+
+.text{
+    position: relative;
+    width: 512px;
+    border: 1px solid transparent;
+
+    &:hover, &.i-editing{
+        border: 1px solid var(--paletteColor3);
+    }
+
+    &-1{
+        line-height: 30px;
+        font-size: 14px;
+        letter-spacing: 1.08px;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    &-2{
+        line-height: 64px;
+        font-size: 56px;
+        letter-spacing: 1px;
+
+        color: #FFFFFF;
+        margin-bottom: 15px;
+
+    }
+    &-3{
+        line-height: 32px;
+        font-size: 24px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.9;
+        margin-bottom: 15px;
+
+    }
+    &-4{
+        line-height: 32px;
+        font-size: 18px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin-bottom: 15px;
+
+
+    }
+}
